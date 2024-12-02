@@ -16,17 +16,933 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+       {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1, h2, .background {
+        font-family: Sour Gummy;  
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      .flip-card {
+        background-color: transparent;
+        width: 150px;
+        height: 150px;
+        perspective: 1000px;
+        border-radius: 25px;
+      }
 
-  </style>
-</head>
-<body>
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        border-radius: 25px;
+      }
 
- 
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
-</body>
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 25px;
+        
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        border-radius: 25px;
+      }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 25px;
+        
+      }
+
+      .main {
+        background-color: #69b774;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 400px;
+        margin-right: 400px;
+        padding: 10px;
+        border-radius: 25px;
+      }
+
+      .secret {
+        /*       background-color:lightgrey; */
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .secret1 {
+        /*       background-color:lightgrey; */
+        display: flex;
+        margin-left: 700px;
+      }
+
+
+      .round {
+        border-radius: 25px;
+      }
+
+      .flip-card:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+        animation: shake 0.5s;
+
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translate(1px, 1px) rotate(0deg);
+        }
+        10% {
+          transform: translate(-1px, -2px) rotate(-1deg);
+        }
+        20% {
+          transform: translate(-3px, 0px) rotate(1deg);
+        }
+        30% {
+          transform: translate(3px, 2px) rotate(0deg);
+        }
+        40% {
+          transform: translate(1px, -1px) rotate(1deg);
+        }
+        50% {
+          transform: translate(-1px, 2px) rotate(-1deg);
+        }
+        60% {
+          transform: translate(-3px, 1px) rotate(0deg);
+        }
+        70% {
+          transform: translate(3px, 1px) rotate(-1deg);
+        }
+        80% {
+          transform: translate(-1px, -1px) rotate(1deg);
+        }
+        90% {
+          transform: translate(1px, 2px) rotate(0deg);
+        }
+        100% {
+          transform: translate(1px, -2px) rotate(-1deg);
+        }
+      }
+
+      body {
+        background-color: #a8d977;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Find Pip</h1>
+      <h2>Oh no, you lost your cat Pip! :( You need to go find him!</h2>
+
+      <body class="background">
+        <em
+          >You last saw Pip running into a place full of bushes. Go shake 'em
+          and see if he's there. Could a reward await you?</em
+        >
+        <br />
+        <br />
+        DISCLAIMER: Work in progress, will be updating the site/endings with
+        future projects! Thank you for visiting ♡
+      </body>
+    </center>
+
+    <div class="secret1">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back" style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/692/575/small/substitution-icon-template-black-color-editable-substitution-icon-symbol-flat-illustration-for-graphic-and-web-design-free-vector.jpg)">
+            
+            <p>Secret Ending 1!</p>
+            <p><em>*click me*</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Jungle Animal</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            class="round"
+            src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+            width="150"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>Jaguar</h1>
+          <p>Jungle Animal</p>
+          <p>We love that guy</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="secret">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              class="round"
+              src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg"
+              width="150"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Jaguar</h1>
+            <p>Secret Ending 3!</p>
+            <p><em>*click me*</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
